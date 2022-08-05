@@ -154,3 +154,7 @@ Data/ratings.csv.gz
 Data/title_aka.csv.gz
 Data/title_basics.csv.gz
 Data/title_akas.csv.gz
+Data/title_akas_cleaned.csv.gz
+Data/title_akas_cleaned.csv.gz
+Data/title_basics_cleaned.csv.gz
+Data/title_ratings_cleaned.csv.gz
