@@ -62,3 +62,59 @@ I will use a combination of machine-learning-model-based insights and hypothesis
 ## What is the average ROI (%) for Movies with All Financial Data?
 
 ![image](https://user-images.githubusercontent.com/55251527/187796417-1c37404b-4e8b-4675-ae83-7870835871fa.png)
+
+# MySQL Database
+
+![image](https://user-images.githubusercontent.com/55251527/187797837-18012ed3-2860-4936-9e42-d7d31179179f.png)
+
+# Hypothesis Testing
+
+* $H_0$ *(Null Hypothesis)*: All MPAA ratings generate have equal average revenue.
+
+
+* $H_A$ *(Alternative Hypothesis)*: Some MPAA ratings earn significantly more/less revenue than others.
+
+**Selecting the Right Test**
+
+* Numerical Data with more than 2 groups and we want **one** way ANOVA.
+
+**ANOVA Assumptions**
+
+* No signification outliers
+* Normality
+* Equal Variance
+
+**Outliers**
+
+![image](https://user-images.githubusercontent.com/55251527/187798419-396ec90a-1f8b-4e63-82e5-2734dbc8cc2a.png)
+
+**Check for Normality**
+
+![image](https://user-images.githubusercontent.com/55251527/187798506-386b7cc0-1d09-425e-926b-5180a5f0abe5.png)
+
+* Didn't meet assumption of normality and current batch of data n is too small to disregard (for G movies).
+
+
+* Do not need to test for equal variance, but will do so anyway, since it will not change my chosen test at this point. Additionally, more data is being extracted from the API and all group n's should increase in the near future.
+
+## Checking for Equal Var
+
+**LeveneResult(statistic=75.1307193499567, pvalue=2.2402973839869673e-75)**
+
+* The groups do NOT have equal variance.
+
+**KruskalResult(statistic=572.4484428432596, pvalue=1.8117464246224629e-121)**
+
+*True
+
+* Our Kruskal Wallis test returned a p-value <.0001.
+
+
+* There is a significant difference in the average revenue for different movie certifications.
+
+
+* A post-hoc test is needed to determine which ratings were different.
+
+### Post-Hoc Tukey's Multiple Comparison
+
+![image](https://user-images.githubusercontent.com/55251527/187798770-2d16a145-7c80-4b26-9ba8-b2104553fa6d.png)
