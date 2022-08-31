@@ -32,3 +32,33 @@ I will use a combination of machine-learning-model-based insights and hypothesis
     * title.ratings.tsv.gz
     * title.akas.tsv.gz
 
+## EDA Overview of Extracted Data From TMDB
+
+* How many movies had at least some valid financial information (values > 0 for budget OR revenue)?
+
+![image](https://user-images.githubusercontent.com/55251527/187796174-91d8cf07-73fa-47af-a176-ca075faea30d.png)
+
+
+## What Years are represented?
+
+![image](https://user-images.githubusercontent.com/55251527/187796253-db0fcbe8-a0dd-49f0-b5fc-4effbe5ebb48.png)
+
+## Average Revenue By Year
+
+![image](https://user-images.githubusercontent.com/55251527/187796295-ba116249-a289-4895-bf91-1fc12a5c8fb2.png)
+
+## How many movies are there in each of the certification categories (G/PG/PG-13/R)?
+
+![image](https://user-images.githubusercontent.com/55251527/187796327-57f49528-9475-44a4-a4c9-62c438da93ef.png)
+
+## What is the average revenue per certification category?
+
+![image](https://user-images.githubusercontent.com/55251527/187796354-de94c241-07db-41cb-a415-3f6b1aaf4939.png)
+
+## What is the average budget per certification category?
+
+![image](https://user-images.githubusercontent.com/55251527/187796379-52ac6a68-37df-45b8-ae36-ebca9129c869.png)
+
+## What is the average ROI (%) for Movies with All Financial Data?
+
+![image](https://user-images.githubusercontent.com/55251527/187796417-1c37404b-4e8b-4675-ae83-7870835871fa.png)
