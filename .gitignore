@@ -159,3 +159,4 @@ Data/title_akas_cleaned.csv.gz
 Data/title_basics_cleaned.csv.gz
 Data/title_ratings_cleaned.csv.gz
 What-Makes-A-Movie-Successful/
+*.ipynb
